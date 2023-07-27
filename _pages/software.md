@@ -15,23 +15,15 @@ classes:
     - landing
 
 feature_row:
-  - image_path: assets/gravnn_logo.png
+  - image_path: assets/ARPOD.jpg
     # image_caption: "Neat caption"
     alt: "placeholder image 1"
-    title: "GravNN"
-    excerpt: "Package for training Physics-Informed Neural Network Gravity Models"
+    title: "MetaRlArpod"
+    excerpt: "bla bla"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-    url: /software/gravnn
-    
-  - image_path: /assets/Custom_Profile.jpeg
-    # image_caption: "Neat caption"
-    alt: "placeholder image 1"
-    title: "StatOD"
-    excerpt: "Statistical Orbit Determination"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-    url: /software/stat-od
+    url: /software/metarl-arpod
+
 ---
 
 Please find all open-source software packages built for this research below.
