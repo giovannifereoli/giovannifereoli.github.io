@@ -1,0 +1,9 @@
+---
+main:
+  - title: "About"
+    url: /about
+  - title: "Research"
+    url: /research/ # should match the permalink of the md file of interest
+  - title: "Software"
+    url: /software/ # should match the permalink of the md file of interest
+---
