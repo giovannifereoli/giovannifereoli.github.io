@@ -1,7 +1,7 @@
 ---
 name: "arpod-metarl"
 layout: single
-title:  "Meta-Reinforcement Learning for Spacecraft Proximity Operations Guidance and Control in Cislunar Space."
+title:  "Meta-Reinforcement Learning for Spacecraft Proximity Operations Guidance and Control in Cislunar Space"
 date:   2024-01-01 18:22:51 -0600
 collection: research
 tags: thesis
