@@ -16,12 +16,12 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "bla bla bla"
+title                    : "Giovanni Fereoli"
 title_separator          : "-"
 icon                     : fas fa-fw fa-satellite
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Giovanni Fereoli"
-description              : "more bla bla bla"
+description              : "Personal Website for Research"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : giovannifereoli/ThesisVer2 # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,16 +107,16 @@ analytics:
 author:
   name             : "Giovanni Fereoli"
   avatar           : assets/Custom_Profile.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Master's Student at Politecnico di Milano"
-  location         : "Colorado"
-  # email            : joma5012@colorado.edu
+  bio              : "Graduate Research Assistant (GRA) @ Colorado Center for Astrodynamics Research (CCAR)"
+  location         : "Boulder (CO), United States"
+  email            : giovanni.fereoli@colorado.edu
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:giovanni.fereoli@mail.polimi.it"
-    - label: "Website"
+      url: "mailto:giovanni.fereoli@colorado.edu"
+    - label: "ResearchGate"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://www.researchgate.net/profile/Giovanni-Fereoli"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"

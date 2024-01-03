@@ -18,8 +18,8 @@ feature_row:
   - image_path: assets/ARPOD.jpg
     # image_caption: "Neat caption"
     alt: "placeholder image 1"
-    title: "MetaRlArpod"
-    excerpt: "bla bla"
+    title: "Meta-RL for spacecraft proximity operations G&C"
+    excerpt: "Code from my MS thesis project developed at Professor Hanspeter Schaub's Autonomous Vehicle Systems (AVS) laboratory."
     btn_label: "Read More"
     btn_class: "btn--inverse"
     url: /software/metarl-arpod
