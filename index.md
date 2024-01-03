@@ -15,7 +15,7 @@ feature_row:
     # image_caption: "optional caption"
     # alt: "image placeholder"
     title: "Meta-Reinforcement Learning for Spacecraft Proximity Operations Guidance and Control in Cislunar Space"
-    excerpt: "MS Thesis developed at"
+    excerpt: "MS Thesis developed at the University of Colorado Boulder under the guidance of Prof. Hanspeter Schaub"
     btn_label: "Read More"
     btn_class: "btn--inverse"
     url: /research/arpod-metarl
