@@ -111,9 +111,6 @@ author:
   location         : "Boulder (CO), United States"
   email            : giovanni.fereoli@colorado.edu
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:giovanni.fereoli@colorado.edu"
     - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
       url: "https://www.researchgate.net/profile/Giovanni-Fereoli"
@@ -126,9 +123,6 @@ author:
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=qWGqZ0EAAAAJ&hl=en"
-    - label: "ORCID"
-      icon: "ai ai-orcid-square ai-fw"
-      url: "https://orcid.org/0000-0002-2560-1000"
 
 # Site Footer
 footer:
