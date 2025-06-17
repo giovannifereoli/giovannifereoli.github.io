@@ -1,13 +1,13 @@
 ---
-name: "Scarabaeus – Navigation Tool for Interplanetary Missions"
+name: "Scarabaeus - Navigation Tool for Interplanetary Missions"
 layout: single
-title: "Scarabaeus – Navigation Tool for Interplanetary Missions"
+title: "Scarabaeus - Navigation Tool for Interplanetary Missions"
 date: 2025-01-01 12:00:00 -0600
 collection: software
 classes: wide
 
 header:
-    teaser: assets/scarabaeus_logo_dark.png
+  teaser: assets/scarabaeus_logo_dark.png
 ---
 
 **Scarabaeus** is a modular and high-performance open-source tool for orbit determination and navigation, designed for interplanetary spacecraft and small-body proximity operations. It is developed by the Orbital Research Cluster for Celestial Applications (ORCCA) Lab at the University of Colorado Boulder.
@@ -35,4 +35,5 @@ Scarabaeus is currently being used in support of the [Emirates Mission to the As
   Jay McMahon, Mattia Pugliatti, Giovanni Fereoli, Santhosh Pattamudu-Manoharan, Zachary Ellis, Annalise Cabra, Mohamed Almashjari, Mohamed Kuleib, Wendy Frank, Jeremy Knittel  
   *In preparation for the 2025 AAS/AIAA Astrodynamics Specialist Conference*, Boston, MA, August 2025.
 
-For questions, early access, or collaboration opportunities, feel free to reach out
+For questions, early access, or collaboration opportunities, feel free to reach out.
+
