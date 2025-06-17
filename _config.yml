@@ -333,3 +333,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      
+  # _custom
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      css: "assets/css/custom.css"
