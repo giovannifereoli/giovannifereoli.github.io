@@ -23,7 +23,14 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--inverse"
     url: /software/metarl-arpod
-
+    
+  - image_path: assets/scarabaeus_logo_dark.png
+    alt: "placeholder image 2"
+    title: "Scarabaeus: Open-Source Navigation Toolkit"
+    excerpt: "An open-source software package for spacecraft orbit determination and navigation, developed at the ORCCA Lab (CU Boulder) in collaboration with the Emirates Mission to the Asteroid Belt."
+    btn_label: "Explore"
+    btn_class: "btn--inverse"
+    url: /software/scarabaeus
 ---
 
 Please find all open-source software packages built for this research below.
