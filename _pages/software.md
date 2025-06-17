@@ -30,7 +30,7 @@ feature_row:
     excerpt: "An open-source software package for spacecraft orbit determination and navigation, developed at the ORCCA Lab (CU Boulder) in collaboration with the Emirates Mission to the Asteroid Belt."
     btn_label: "Explore"
     btn_class: "btn--inverse"
-    url: /software/scarabaeus
+    url: /software/scb
 ---
 
 Please find all open-source software packages built for this research below.
