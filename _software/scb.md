@@ -7,7 +7,7 @@ collection: software
 classes: wide
 
 header:
-    teaser: assets/Custom_Profile.jpeg
+    teaser: assets/scarabaeus_logo_dark.png
 ---
 
 **Scarabaeus** is a modular and high-performance open-source tool for orbit determination and navigation, designed for interplanetary spacecraft and small-body proximity operations. It is developed by the Orbital Research Cluster for Celestial Applications (ORCCA) Lab at the University of Colorado Boulder.
