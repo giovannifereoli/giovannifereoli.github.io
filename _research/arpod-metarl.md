@@ -25,3 +25,4 @@ In order to address the challenges of future space exploration, new lightweight 
 
 [Read the MS Thesis](https://hanspeterschaub.info/Papers/grads/GiovanniFereoli.pdf){: .btn .btn--primary .btn--large}
 [Read the Presentation](https://www.researchgate.net/publication/376681432_MSc_Defense_Presentation){: .btn .btn--primary .btn--large}
+[Read the Journal Paper](https://doi.org/10.2514/1.A36100){: .btn .btn--primary .btn--large}
