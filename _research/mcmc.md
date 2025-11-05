@@ -7,10 +7,10 @@ collection: research
 tags: orbit determination, small bodies, MCMC, nonlinear estimation
 
 header:
-  teaser: assets/mcmc_teaser.jpeg
+  teaser: assets/mcmc_teaser.png
 ---
 
-![MCMC State Posterior](/assets/mcmc_teaser.jpg)
+![MCMC State Posterior](/assets/mcmc_teaser.png)
 
 Classical orbit determination (OD) techniques—such as batch least-squares and Kalman filtering—rely on local linearization and Gaussian uncertainty assumptions. Around small bodies or in weak-dynamics regimes, these assumptions often break down, leading to biased estimates, underestimated uncertainty, or failure to converge.
 
