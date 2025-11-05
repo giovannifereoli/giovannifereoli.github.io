@@ -1,8 +1,8 @@
 ---
 name: "gravity-modeling"
 layout: single
-title:  "Cylindrical Harmonics for Local Gravity Field Modeling in TAG and Landing Scenarios"
-date:   2025-01-01 10:00:00 -0600
+title: "Cylindrical Harmonics for Local Gravity Field Modeling in TAG and Landing Scenarios"
+date: 2025-01-01 10:00:00 -0600
 collection: research
 tags: gravity, small bodies, cylindrical harmonics
 
@@ -12,17 +12,29 @@ header:
 
 ![Gravity Field Fitting](/assets/gravity_cylinders.jpg)
 
-Accurate gravity field modeling plays a critical role in small-body missions, especially for tight navigation scenarios such as Touch-And-Go (TAG) maneuvers and landings. Traditional spherical harmonics lose efficiency and accuracy when modeling local gravity fields near non-convex or highly irregular shapes. In this work, we explore the use of **cylindrical harmonics** as an alternative basis for locally fitting the gravity field around an asteroid surface.
+Accurate gravity modeling is fundamental for proximity operations around small bodies, particularly during critical phases such as touch-and-go (TAG) and landing. Conventional exterior formulations—spherical harmonics, polyhedral models, and mascons—often encounter limitations related to convergence, local fidelity, and computational cost when operating near the surface or within highly localized regions of interest.
 
-By sampling the gravitational acceleration and potential from a polyhedral model, we construct and fit a cylindrical harmonic expansion that retains both accuracy and numerical stability within a defined region of interest. We also investigate the impact of normalization strategies and conditioning of the design matrix to improve estimation performance. This method is validated against polyhedral truth data and demonstrated in descent scenarios relevant to missions like OSIRIS-REx and the upcoming Emirates Mission to the Asteroid Belt.
+This work introduces an **interior cylindrical Bessel expansion** for localized gravity field representation, derived directly from Laplace’s equation in cylindrical coordinates. The resulting formulation leverages **Fourier–Bessel basis functions**, providing guaranteed convergence inside a modeled cylindrical domain and enabling targeted high-fidelity gravity reconstruction. Expansion coefficients are obtained via weighted least-squares fitting to truth-model field samples, and the solution is validated against a high-resolution polyhedral gravity model.
 
-This work supports real-time guidance applications where fast evaluation and good gradient behavior are required for optimization and estimation tasks.
+The approach demonstrates:
+
+- Sub-percent errors in potential and acceleration within the cylindrical region, including near-surface regimes.
+- Improved local convergence relative to traditional spherical harmonic and mascon models.
+- Reduced coefficient count for comparable accuracy, yielding computational efficiency.
+- Consistent agreement in trajectory propagation and uncertainty growth through covariance analysis.
+
+This localized modeling framework enables precise gravity representation for **landing, TAG, terminal guidance, and surface-interaction trajectories**, while also supporting future extensions in **orbit determination, close-proximity autonomy, regolith dynamics, and density inference**.
 
 ---
 
-### 📝 Related Publication
+### 📝 Related Publications
 
 - **On Cylindrical Harmonics for Local Gravity Field Modeling**  
-  Giovanni Fereoli, Jay McMahon  
-  *In preparation for the 2025 AAS/AIAA Astrodynamics Specialist Conference*, Boston, Massachusetts, August 2025.
+  *G. Fereoli, J. McMahon*  
+  *AAS/AIAA Astrodynamics Specialist Conference*, Boston, August 2025 — **Breakwell Award Winner**
+
+- **Interior Gravity Characterization of Small Celestial Bodies Using Cylindrical Harmonics**  
+  *G. Fereoli, J. McMahon*  
+  In preparation for *Celestial Mechanics and Dynamical Astronomy*
+
 
