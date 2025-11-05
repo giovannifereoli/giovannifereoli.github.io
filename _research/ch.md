@@ -10,7 +10,7 @@ header:
   teaser: assets/gravity_teaser.png
 ---
 
-![Gravity Field Fitting](/assets/gravity_cylinders.jpg)
+![Gravity Field Fitting](/assets/gravity_teaser.png)
 
 Accurate gravity modeling is fundamental for proximity operations around small bodies, particularly during critical phases such as touch-and-go (TAG) and landing. Conventional exterior formulations—spherical harmonics, polyhedral models, and mascons—often encounter limitations related to convergence, local fidelity, and computational cost when operating near the surface or within highly localized regions of interest.
 
