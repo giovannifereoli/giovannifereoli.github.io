@@ -7,7 +7,7 @@ collection: research
 tags: orbit determination, optical navigation, visual odometry, small bodies
 
 header:
-  teaser: assets/vo_teaser.jpeg
+  teaser: assets/vo_teaser.jpg
 ---
 
 ![Optical Navigation Framework](/assets/vo_teaser.jpg)
