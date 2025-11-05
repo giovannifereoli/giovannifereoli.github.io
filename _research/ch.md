@@ -7,7 +7,7 @@ collection: research
 tags: gravity, small bodies, cylindrical harmonics
 
 header:
-  teaser: assets/gravity_teaser.jpeg
+  teaser: assets/gravity_teaser.png
 ---
 
 ![Gravity Field Fitting](/assets/gravity_cylinders.jpg)
