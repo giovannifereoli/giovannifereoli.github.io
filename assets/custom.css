@@ -57,7 +57,7 @@
   --bg-color: #0d1117;
   --text-color: #e6edf3;
   --muted-color: #9ba3af;
-  --card-bg: #111827;
+  --card-bg: #0d1117;
   --link-color: #58a6ff;
   --link-hover: #8ab4ff;
 }
@@ -66,7 +66,7 @@
   --bg-color: #ffffff;
   --text-color: #0b1021;
   --muted-color: #4b5563;
-  --card-bg: #f3f4f6;
+  --card-bg: #ffffff;
   --link-color: #2563eb;
   --link-hover: #1d4ed8;
 }
@@ -134,7 +134,12 @@ a:focus {
 }
 
 .page__inner-wrap,
-.page__content,
+.page__content {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .archive__item {
   background: var(--card-bg);
   border-radius: 8px;
