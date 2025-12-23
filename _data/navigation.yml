@@ -6,4 +6,6 @@ main:
     url: /research/ # should match the permalink of the md file of interest
   - title: "Software"
     url: /software/ # should match the permalink of the md file of interest
+  - title: "CV"
+    url: /cv/
 ---
