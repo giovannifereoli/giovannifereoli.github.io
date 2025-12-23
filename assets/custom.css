@@ -29,3 +29,155 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Standardize research card and page hero heights */
+.archive__item-teaser,
+.page__hero,
+.page__hero--overlay {
+  max-height: 300px;
+}
+
+.archive__item-teaser img,
+.page__hero img,
+.page__hero--overlay img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.page__content img[loading="lazy"] {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Theme toggle styles */
+:root {
+  --bg-color: #0d1117;
+  --text-color: #e6edf3;
+  --muted-color: #9ba3af;
+  --card-bg: #111827;
+  --link-color: #58a6ff;
+  --link-hover: #8ab4ff;
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #0b1021;
+  --muted-color: #4b5563;
+  --card-bg: #f3f4f6;
+  --link-color: #2563eb;
+  --link-hover: #1d4ed8;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.page,
+.page__inner-wrap,
+.page__content,
+.page__meta,
+.page__footer,
+.sidebar,
+.masthead {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.page__content p,
+.page__content li,
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  color: var(--text-color);
+}
+
+.page__meta,
+.page__footer,
+.page__share {
+  color: var(--muted-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+}
+
+.greedy-nav,
+.masthead,
+.page__hero,
+.page__hero--overlay {
+  background: var(--card-bg);
+}
+
+.greedy-nav,
+.greedy-nav a,
+.masthead__menu-item,
+.masthead__menu-item a {
+  color: var(--text-color);
+}
+
+.greedy-nav a:hover,
+.masthead__menu-item a:hover {
+  color: var(--link-hover);
+}
+
+.page__inner-wrap,
+.page__content,
+.archive__item {
+  background: var(--card-bg);
+  border-radius: 8px;
+}
+
+.archive__item-title a {
+  color: var(--text-color);
+}
+
+.archive__item-excerpt {
+  color: var(--muted-color);
+}
+
+.color-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+}
+
+#color-mode-toggle {
+  background: var(--link-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#color-mode-toggle:hover,
+#color-mode-toggle:focus {
+  background: var(--link-hover);
+}
+
+/* Ensure consistent teaser image sizes on research pages */
+.page__meta + .page__hero,
+.page__hero {
+  max-height: 320px;
+}
+
+.page__hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
