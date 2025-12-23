@@ -10,7 +10,7 @@ header:
   teaser: assets/gravity_teaser.png
 ---
 
-![Gravity Field Fitting](/assets/gravity_teaser.png)
+<img src="/assets/gravity_teaser.png" alt="Gravity field fitting using cylindrical harmonics" loading="lazy">
 
 Accurate gravity modeling is fundamental for proximity operations around small bodies, particularly during critical phases such as touch-and-go (TAG) and landing. Conventional exterior formulations—spherical harmonics, polyhedral models, and mascons—often encounter limitations related to convergence, local fidelity, and computational cost when operating near the surface or within highly localized regions of interest.
 
@@ -31,10 +31,11 @@ This localized modeling framework enables precise gravity representation for **l
 
 - **On Cylindrical Harmonics for Local Gravity Field Modeling**  
   *G. Fereoli, J. McMahon*  
-  *AAS/AIAA Astrodynamics Specialist Conference*, Boston, August 2025 — **Breakwell Award Winner**
-
+  *AAS/AIAA Astrodynamics Specialist Conference*, Boston, August 2025 — **Breakwell Award Winner** — *Presented*
 - **Interior Gravity Characterization of Small Celestial Bodies Using Cylindrical Harmonics**  
   *G. Fereoli, J. McMahon*  
-  In preparation for *Celestial Mechanics and Dynamical Astronomy*
+  In preparation for *Celestial Mechanics and Dynamical Astronomy* — *In preparation*
 
+---
 
+[View related software and tools](/software){: .btn .btn--primary }
