@@ -1,6 +1,6 @@
 .page__hero,
 .page__hero--overlay {
-  max-height: 260px;
+  max-height: 220px;
   overflow: hidden;
 }
 
@@ -15,7 +15,7 @@
 @media (max-width: 768px) {
   .page__hero,
   .page__hero--overlay {
-    max-height: 200px;
+    max-height: 160px;
   }
 }
 
@@ -34,7 +34,7 @@
 .archive__item-teaser,
 .page__hero,
 .page__hero--overlay {
-  max-height: 300px;
+  max-height: 240px;
 }
 
 .archive__item-teaser img,
@@ -173,7 +173,7 @@ a:focus {
 /* Ensure consistent teaser image sizes on research pages */
 .page__meta + .page__hero,
 .page__hero {
-  max-height: 320px;
+  max-height: 240px;
 }
 
 .page__hero img {
