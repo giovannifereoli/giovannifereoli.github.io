@@ -10,7 +10,7 @@ header:
   teaser: assets/vo_teaser.jpg
 ---
 
-![Optical Navigation Framework](/assets/vo_teaser.jpg)
+<img src="/assets/vo_teaser.jpg" alt="Optical navigation framework for deep-space visual odometry" loading="lazy">
 
 Autonomous navigation in the proximity of small bodies remains challenging due to weak, highly irregular gravity fields, uncertain shape and albedo properties, and intermittent ground-based tracking. **Optical navigation (OpNav)** provides a path to resilience by using onboard imagery for relative motion estimation, particularly during close-approach and low-altitude operations.
 
@@ -27,8 +27,12 @@ Validation is performed using **flight imagery from NASA’s Dawn mission** at a
 
 ---
 
-### 📝 Related Work
+### 📝 Related Publications
 
 - **Tightly-Coupled Rotation-Constrained Visual Odometry for Orbit Determination Around Small Celestial Bodies**  
   *G. Fereoli*  
-  In preparation for independent study (ASEN 6849), University of Colorado Boulder
+  In preparation for independent study (ASEN 6849), University of Colorado Boulder — *In preparation*
+
+---
+
+[View related software and tools](/software){: .btn .btn--primary }

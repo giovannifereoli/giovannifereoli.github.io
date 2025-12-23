@@ -10,7 +10,7 @@ header:
   teaser: assets/mcmc_teaser.png
 ---
 
-![MCMC State Posterior](/assets/mcmc_teaser.png)
+<img src="/assets/mcmc_teaser.png" alt="Posterior distribution from ensemble MCMC sampler" loading="lazy">
 
 Classical orbit determination (OD) techniques—such as batch least-squares and Kalman filtering—rely on local linearization and Gaussian uncertainty assumptions. Around small bodies or in weak-dynamics regimes, these assumptions often break down, leading to biased estimates, underestimated uncertainty, or failure to converge.
 
@@ -29,8 +29,12 @@ The toolset is being expanded into an **open-source, modular OD library**, suppo
 
 ---
 
-### 📝 Related Publication(s)
+### 📝 Related Publications
 
 - **Efficient Posterior Sampling for Small-Body Orbit Determination**  
   *G. Fereoli, J. McMahon*  
-  in preparation (target venue TBD)
+  In preparation (target venue TBD) — *In preparation*
+
+---
+
+[View related software and tools](/software){: .btn .btn--primary }
