@@ -11,3 +11,7 @@ classes:
 ---
 
 Explore the projects below to learn more about ongoing and completed research efforts.
+
+### Featured
+
+- [Deep Learning-Based Online Density Adaptation for Aerocapture Guidance](/research/aerocapture-density-adaptation/)
