@@ -9,3 +9,5 @@ classes:
     - wide
     - landing
 ---
+
+Explore the projects below to learn more about ongoing and completed research efforts.
