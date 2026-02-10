@@ -10,6 +10,8 @@ header:
   teaser: assets/aerocapture.png
 ---
 
+<img src="/assets/aerocapture.png" alt="Spacecraft performing aerocapture maneuver" loading="lazy">
+
 ## Abstract
 
 Aerocapture is an entry maneuver used to insert a spacecraft into orbit by dissipating energy through the atmosphere. Guidance accuracy is highly sensitive to the onboard atmospheric density model. Due to variability and uncertainty in density, an accurate onboard density model is critical for improving targeting accuracy.
