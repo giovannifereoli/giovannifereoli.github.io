@@ -7,10 +7,8 @@ collection: research
 tags: aerocapture, guidance, deep learning, LSTM, atmospheric density
 
 header:
-  teaser: assets/Logo.jpg
+  teaser: assets/aerocapture.png
 ---
-
-**Image Placeholder:** A representative figure for the online-adaptive LSTM aerocapture guidance architecture and performance results will be added here.
 
 ## Abstract
 
