@@ -32,9 +32,11 @@ This localized modeling framework enables precise gravity representation for **l
 - **On Cylindrical Harmonics for Local Gravity Field Modeling**  
   *G. Fereoli, J. McMahon*  
   *AAS/AIAA Astrodynamics Specialist Conference*, Boston, August 2025 — **Breakwell Award Winner** — *Presented*
+
 - **Interior Gravity Characterization of Small Celestial Bodies Using Cylindrical Harmonics**  
   *G. Fereoli, J. McMahon*  
-  In preparation for *Celestial Mechanics and Dynamical Astronomy* — *In preparation*
+  *Celestial Mechanics and Dynamical Astronomy*, 138, 12 (2026).  
+  https://doi.org/10.1007/s10569-026-10281-7
 
 ---
 
