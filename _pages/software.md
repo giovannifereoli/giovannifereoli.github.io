@@ -31,6 +31,14 @@ feature_row:
     btn_label: "Explore"
     btn_class: "btn--inverse"
     url: /software/scb
+
+  - image_path: gravity_teaser.jpg
+    alt: "Didymos and Dimorphos"
+    title: "GUBAS-RS"
+    excerpt: "A Rust software project I developed and published as open source on GitHub."
+    btn_label: "View Project"
+    btn_class: "btn--inverse"
+    url: /software/gubas-rs
 ---
 
 Please find all open-source software packages built for this research below.
