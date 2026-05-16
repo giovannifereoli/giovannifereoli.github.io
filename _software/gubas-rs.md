@@ -7,7 +7,7 @@ collection: software
 classes: wide
 
 header:
-  teaser: assets/gravity_teaser.png
+  teaser: assets/Didymos-Dimorphos_true_orientation.png
 ---
 
 **GUBAS-RS** (**G**eneral **U**se **B**inary **A**steroid **S**imulator, Rust) is an open-source Rust port of the original C++ GUBAS integrator.
