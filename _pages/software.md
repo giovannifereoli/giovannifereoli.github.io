@@ -32,7 +32,7 @@ feature_row:
     btn_class: "btn--inverse"
     url: /software/scb
 
-  - image_path: assets/gravity_teaser.png
+  - image_path: assets/Didymos-Dimorphos_true_orientation.png
     alt: "Didymos and Dimorphos"
     title: "GUBAS-RS"
     excerpt: "A Rust software project I developed and published as open source on GitHub."
