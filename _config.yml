@@ -21,11 +21,11 @@ title_separator          : "-"
 icon                     : fas fa-fw fa-satellite
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Giovanni Fereoli"
-description              : "Personal Website for Research"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Giovanni Fereoli — Ph.D. researcher in astrodynamics, orbit determination, and small-body navigation at CU Boulder."
+url                      : "https://giovannifereoli.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : giovannifereoli/ThesisVer2 # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : assets/Custom_Profile.jpeg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+repository               : giovannifereoli/giovannifereoli.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : assets/img/banner.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -87,7 +87,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : assets/img/banner.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -106,44 +106,37 @@ analytics:
 # Site Author
 author:
   name             : "Giovanni Fereoli"
-  avatar           : assets/Custom_Profile.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Graduate Research Assistant (GRA) @ Colorado Center for Astrodynamics Research (CCAR)"
-  location         : "Boulder (CO), United States"
+  avatar           : assets/img/profile.jpg
+  bio              : "Ph.D. researcher in Aerospace Engineering @ CU Boulder (ORCCA Lab) · Flight Dynamics Affiliate @ LASP. Orbit determination, gravity science & optical navigation for small-body missions."
+  location         : "Boulder, CO, United States"
   email            : giovanni.fereoli@colorado.edu
   links:
-    - label: "ResearchGate"
-      icon: "fab fa-fw fa-researchgate"
-      url: "https://www.researchgate.net/profile/Giovanni-Fereoli"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/giovanni-fereoli-356547142/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/giovannifereoli"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=qWGqZ0EAAAAJ&hl=en"
-
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: https://github.com/giovannifereoli
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+      url: "https://github.com/giovannifereoli"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/giovanni-fereoli"
+    - label: "ResearchGate"
+      icon: "fab fa-fw fa-researchgate"
+      url: "https://www.researchgate.net/profile/Giovanni-Fereoli"
+    - label: "CV (PDF)"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/Giovanni_Fereoli_CV.pdf"
+footer:
+  links:
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=qWGqZ0EAAAAJ&hl=en"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/giovannifereoli"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/giovanni-fereoli"
       # url:
 
 

@@ -1,13 +1,12 @@
 ---
 name: "GUBAS-RS"
-layout: single
 title: "GUBAS-RS"
 date: 2026-05-16 12:00:00 -0000
 collection: software
-classes: wide
+excerpt: "Rust port of the GUBAS binary-asteroid simulator, with autodiff Jacobians and OD sensitivities."
 
 header:
-  teaser: assets/Didymos-Dimorphos_true_orientation.png
+  teaser: assets/img/didymos.png
 ---
 
 **GUBAS-RS** (**G**eneral **U**se **B**inary **A**steroid **S**imulator, Rust) is an open-source Rust port of the original C++ GUBAS integrator.

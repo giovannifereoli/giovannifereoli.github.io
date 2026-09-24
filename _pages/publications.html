@@ -1,0 +1,54 @@
+---
+title: "Publications"
+layout: single
+permalink: /publications/
+author_profile: true
+classes: wide
+excerpt: "Journal articles, conference papers, workshops, and theses."
+---
+{% assign pubs = site.data.publications %}
+<p class="lede">
+  Journal articles, conference papers, and theses on small-body orbit determination, gravity modeling, optical navigation, and learning-based guidance.
+  Citation metrics are on <a href="https://scholar.google.com/citations?user=qWGqZ0EAAAAJ&hl=en">Google Scholar</a>.
+</p>
+
+<div class="chips" role="toolbar" aria-label="Filter publications">
+  <button class="chip is-active" data-pub-filter="all">All <span>{{ pubs.size }}</span></button>
+  {% assign n = pubs | where: "type", "journal" %}<button class="chip" data-pub-filter="journal">Journal <span>{{ n.size }}</span></button>
+  {% assign n = pubs | where: "type", "conference" %}<button class="chip" data-pub-filter="conference">Conference <span>{{ n.size }}</span></button>
+  {% assign n = pubs | where: "type", "workshop" %}<button class="chip" data-pub-filter="workshop">Workshop <span>{{ n.size }}</span></button>
+  {% assign n = pubs | where: "type", "thesis" %}<button class="chip" data-pub-filter="thesis">Thesis <span>{{ n.size }}</span></button>
+</div>
+
+{% assign by_year = pubs | group_by: "year" | sort: "name" | reverse %}
+{% for group in by_year %}
+<section class="pub-year" data-pub-group>
+  <h2 class="pub-year__label">{{ group.name }}</h2>
+  <ul class="pub-list">
+    {% for p in group.items %}
+    <li class="pub-card" data-pub-type="{{ p.type }}">
+      <div class="pub-card__meta">
+        <span class="badge badge--{{ p.type }}">{{ p.type }}</span>
+        {% case p.status %}
+          {% when "published" %}<span class="badge badge--ok">published</span>
+          {% when "presented" %}<span class="badge badge--ok">presented</span>
+          {% when "upcoming" %}<span class="badge badge--soon">upcoming</span>
+          {% when "in-prep" %}<span class="badge badge--muted">in preparation</span>
+        {% endcase %}
+        {% if p.award %}<span class="badge badge--award"><i class="fas fa-trophy"></i> {{ p.award }}</span>{% endif %}
+      </div>
+      <h3 class="pub-card__title">{{ p.title }}</h3>
+      <p class="pub-card__authors">{{ p.authors | replace: "G. Fereoli", "<strong>G. Fereoli</strong>" }}</p>
+      <p class="pub-card__venue"><em>{{ p.venue }}</em>{% if p.date %} · {{ p.date }}{% endif %}</p>
+      <div class="pub-card__links">
+        {% if p.doi %}<a class="pill pill--small" href="https://doi.org/{{ p.doi }}"><i class="fas fa-link"></i> DOI</a>{% endif %}
+        {% if p.pdf %}<a class="pill pill--small" href="{{ p.pdf }}"><i class="fas fa-file-pdf"></i> PDF</a>{% endif %}
+        {% if p.slides %}<a class="pill pill--small" href="{{ p.slides }}"><i class="fas fa-desktop"></i> Slides</a>{% endif %}
+        {% if p.code %}<a class="pill pill--small" href="{{ p.code }}"><i class="fab fa-github"></i> Code</a>{% endif %}
+        {% if p.research %}<a class="pill pill--small" href="{{ p.research | relative_url }}"><i class="fas fa-arrow-right"></i> Project</a>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

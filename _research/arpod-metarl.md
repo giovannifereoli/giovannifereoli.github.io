@@ -1,17 +1,17 @@
 ---
 name: "arpod-metarl"
-layout: single
 title:  "Meta-Reinforcement Learning for Spacecraft Proximity Operations Guidance and Control in Cislunar Space"
-date:   2024-01-01 18:22:51 -0600
+date: 2023-12-01 18:22:51 -0600
 collection: research
-tags: thesis
+tags: [thesis, reinforcement learning, guidance, cislunar]
 
+excerpt: "Meta-RL closed-loop guidance for cislunar proximity operations: an LSTM agent trained with PPO in the CR3BP. From my M.S. thesis, published in JSR."
 header:
-  teaser: assets/ARPOD.jpg
+  teaser: assets/img/arpod.jpg
 
 ---
 
-<img src="/assets/copRes1.jpg" alt="Spacecraft proximity operations guided by meta-reinforcement learning" loading="lazy">
+<img src="/assets/img/arpod-results.jpg" alt="Spacecraft proximity operations guided by meta-reinforcement learning" loading="lazy">
 
 **Highlights**
 

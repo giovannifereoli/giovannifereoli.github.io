@@ -1,0 +1,86 @@
+---
+title: "Software"
+layout: single
+author_profile: true
+permalink: /software/
+classes: wide
+excerpt: "Open-source tools for orbit determination, gravity modeling, and small-body dynamics."
+---
+<p class="lede">Open-source tools from my research on orbit determination, gravity modeling, and small-body dynamics. The code is on <a href="https://github.com/giovannifereoli">GitHub</a>.</p>
+
+<div class="sw-grid">
+  <article class="sw-card sw-card--featured">
+    <div class="sw-card__media sw-card__media--contain"><img src="{{ '/assets/img/scarabaeus.png' | relative_url }}" alt="Scarabaeus logo" loading="lazy"></div>
+    <div class="sw-card__body">
+      <div class="sw-card__langs"><span>Python</span><span>Rust</span><span>C++</span></div>
+      <h3>Scarabaeus</h3>
+      <p>An open-source interplanetary orbit determination and navigation framework from the ORCCA Lab, used operationally for the Emirates Mission to the Asteroid Belt. I've contributed 1000+ commits, covering dynamics, measurement models, estimation, and V&amp;V.</p>
+      <div class="sw-card__links">
+        <a class="pill pill--small pill--primary" href="{{ '/software/scb' | relative_url }}">Details</a>
+        <a class="pill pill--small" href="https://ccar-orcca.github.io/scarabaeus-docs/"><i class="fas fa-book"></i> Docs</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="sw-card">
+    <div class="sw-card__media"><img src="{{ '/assets/img/mcmc.jpg' | relative_url }}" alt="MCMC posterior" loading="lazy"></div>
+    <div class="sw-card__body">
+      <div class="sw-card__langs"><span>Python</span></div>
+      <h3>MCMC-STT-OD</h3>
+      <p>Bayesian orbit determination with affine-invariant ensemble MCMC, sped up by high-order state transition tensors.</p>
+      <div class="sw-card__links">
+        <a class="pill pill--small" href="https://github.com/giovannifereoli/MCMC-STT-OD"><i class="fab fa-github"></i> Code</a>
+        <a class="pill pill--small" href="{{ '/research/mcmc' | relative_url }}">Research</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="sw-card">
+    <div class="sw-card__media"><img src="{{ '/assets/img/gravity.jpg' | relative_url }}" alt="Cylindrical harmonic gravity error map" loading="lazy"></div>
+    <div class="sw-card__body">
+      <div class="sw-card__langs"><span>Python</span></div>
+      <h3>Interior-Gravity-Field-CH</h3>
+      <p>A cylindrical harmonic (Fourier–Bessel) gravity expansion for modeling small bodies near the surface.</p>
+      <div class="sw-card__links">
+        <a class="pill pill--small" href="https://github.com/giovannifereoli/Interior-Gravity-Field-CH"><i class="fab fa-github"></i> Code</a>
+        <a class="pill pill--small" href="{{ '/research/ch' | relative_url }}">Research</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="sw-card">
+    <div class="sw-card__media sw-card__media--contain sw-card__media--dark"><img src="{{ '/assets/img/didymos.png' | relative_url }}" alt="Didymos and Dimorphos" loading="lazy"></div>
+    <div class="sw-card__body">
+      <div class="sw-card__langs"><span>Rust</span><span>Python</span></div>
+      <h3>GUBAS-RS</h3>
+      <p>A Rust port of the GUBAS binary-asteroid simulator for full two-body problem dynamics, with exact autodiff Jacobians, STM, and parameter sensitivities for OD.</p>
+      <div class="sw-card__links">
+        <a class="pill pill--small" href="https://github.com/giovannifereoli/GUBAS-RS"><i class="fab fa-github"></i> Code</a>
+        <a class="pill pill--small" href="{{ '/software/gubas-rs' | relative_url }}">Details</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="sw-card">
+    <div class="sw-card__media"><img src="{{ '/assets/img/arpod.jpg' | relative_url }}" alt="Spacecraft proximity operations" loading="lazy"></div>
+    <div class="sw-card__body">
+      <div class="sw-card__langs"><span>Python</span></div>
+      <h3>Meta-RL for Proximity Operations</h3>
+      <p>Meta-reinforcement learning (LSTM + PPO) for spacecraft guidance and control in cislunar space. Code from my M.S. thesis.</p>
+      <div class="sw-card__links">
+        <a class="pill pill--small" href="https://github.com/giovannifereoli/RL-for-Spacecraft-Proximity-Operations-GC"><i class="fab fa-github"></i> Code</a>
+        <a class="pill pill--small" href="{{ '/software/metarl-arpod' | relative_url }}">Details</a>
+      </div>
+    </div>
+  </article>
+</div>
+
+<h2 class="section-h">Other projects</h2>
+<ul class="repo-list">
+  <li><a href="https://github.com/giovannifereoli/4179-Toutatis-Rotation-Estimation"><i class="fab fa-github"></i> 4179-Toutatis-Rotation-Estimation</a><span>Spin state and inertia estimation of asteroid Toutatis with rigid-body dynamics.</span></li>
+  <li><a href="https://github.com/giovannifereoli/Point-Cloud-Shape-Reconstruction"><i class="fab fa-github"></i> Point-Cloud-Shape-Reconstruction</a><span>Asteroid shape modeling with Bézier surfaces fitted to point clouds.</span></li>
+  <li><a href="https://github.com/giovannifereoli/ThermoModelingHera"><i class="fab fa-github"></i> ThermoModelingHera</a><span>Thermophysical modeling of the Didymos–Dimorphos binary system.</span></li>
+  <li><a href="https://github.com/giovannifereoli/Inversion-of-Asteroid-Lightcurves"><i class="fab fa-github"></i> Inversion-of-Asteroid-Lightcurves</a><span>Asteroid shape and spin inversion from photometric lightcurves.</span></li>
+  <li><a href="https://github.com/giovannifereoli/SRIF-2nd-order-time_update"><i class="fab fa-github"></i> SRIF-2nd-order-time_update</a><span>Square-root information filter prototypes.</span></li>
+  <li><a href="https://github.com/giovannifereoli/CR3BP-Python"><i class="fab fa-github"></i> CR3BP-Python</a><span>Circular restricted three-body problem tools in Python.</span></li>
+</ul>
