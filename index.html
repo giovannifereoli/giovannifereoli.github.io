@@ -1,112 +1,171 @@
 ---
-title: "About"
-layout: single
+title: "Giovanni Fereoli"
+layout: splash
 permalink: /
-author_profile: true
-classes: [wide, home]
-excerpt: "Giovanni Fereoli, Ph.D. student in Aerospace Engineering at the University of Colorado Boulder, working on orbit determination, gravity science, and optical navigation for small-body missions."
+classes: home
+excerpt: "Orbit determination, gravity science, and optical navigation for small-body missions."
 ---
-<section class="intro">
-  <h1 class="intro__name">Giovanni Fereoli</h1>
-  <p class="intro__role">Ph.D. Student in Aerospace Engineering Sciences · University of Colorado Boulder</p>
 
-  <p>Giovanni Fereoli is a Ph.D. student in the Ann and H.J. Smead Department of Aerospace Engineering Sciences at the University of Colorado Boulder, where he works in the Orbital Research Cluster for Celestial Applications (ORCCA) Laboratory under the supervision of Dr. Jay W. McMahon. He is also a Flight Dynamics Affiliate at the Laboratory for Atmospheric and Space Physics (LASP), where he supports navigation for the Emirates Mission to the Asteroid Belt and contributes to Scarabaeus, an open-source interplanetary orbit determination software.</p>
-
-  <p>His research develops orbit determination methods for small-body missions, addressing its three components: the dynamical model, the measurement model, and the estimation framework. This includes interior gravity field modeling with cylindrical harmonics, map-free terrain-relative optical navigation based on visual odometry, and Bayesian inference via Markov Chain Monte Carlo accelerated by high-order state transition tensors. The methods are validated on data from NASA's Dawn mission and on scenarios inspired by the NEAR Shoemaker and OSIRIS-REx missions, and will be applied to ESA's Hera mission during a 2027 research visit to the University of Bologna.</p>
-
-  <p>Giovanni received his M.S. in Space Engineering (110/110 cum Laude) and his B.S. in Aerospace Engineering from Politecnico di Milano. His M.S. thesis on meta-reinforcement learning for spacecraft proximity operations, carried out at the AVS Laboratory at CU Boulder, was published in the <em>Journal of Spacecraft and Rockets</em>. He received the John V. Breakwell Student Award at the 2025 AAS/AIAA Astrodynamics Specialist Conference.</p>
-
-  <div class="actions">
-    <a class="button button--primary" href="{{ '/assets/Giovanni_Fereoli_CV.pdf' | relative_url }}">Download CV</a>
-    <a class="button" href="{{ '/publications/' | relative_url }}">Publications</a>
-    <a class="button" href="https://scholar.google.com/citations?user=qWGqZ0EAAAAJ&hl=en">Google Scholar</a>
+<section class="hero">
+  <div class="hero__bg" style="background-image: url('{{ '/assets/img/banner.jpg' | relative_url }}');" aria-hidden="true"></div>
+  <div class="hero__stars" aria-hidden="true"></div>
+  <svg class="hero__orbits" viewBox="0 0 600 600" aria-hidden="true">
+    <ellipse cx="300" cy="300" rx="280" ry="120" transform="rotate(-18 300 300)"/>
+    <ellipse cx="300" cy="300" rx="210" ry="80" transform="rotate(24 300 300)"/>
+    <ellipse cx="300" cy="300" rx="140" ry="140" stroke-dasharray="3 7"/>
+    <g class="hero__sat"><circle r="5" cx="300" cy="160"/></g>
+  </svg>
+  <div class="hero__inner">
+    <p class="eyebrow"><span class="pulse"></span> Ph.D. Student · CU Boulder · ORCCA Lab · LASP</p>
+    <h1 class="hero__title">Giovanni <span class="grad">Fereoli</span></h1>
+    <p class="hero__lead">
+      Giovanni develops <strong>orbit determination</strong> methods for missions to <strong>asteroids and small bodies</strong>:
+      gravity models that hold up close to the surface, map-free optical navigation, and Bayesian inference
+      that captures the full uncertainty of a solution.
+    </p>
+    <div class="hero__cta">
+      <a class="pill pill--primary" href="{{ '/research/' | relative_url }}"><i class="fas fa-meteor"></i> Explore Research</a>
+      <a class="pill" href="{{ '/publications/' | relative_url }}"><i class="fas fa-book-open"></i> Publications</a>
+      <a class="pill" href="{{ '/assets/Giovanni_Fereoli_CV.pdf' | relative_url }}"><i class="fas fa-file-pdf"></i> CV</a>
+    </div>
+    <div class="hero__social">
+      <a href="https://scholar.google.com/citations?user=qWGqZ0EAAAAJ&hl=en" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      <a href="https://github.com/giovannifereoli" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/giovanni-fereoli" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.researchgate.net/profile/Giovanni-Fereoli" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+      <a href="mailto:giovanni.fereoli@colorado.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </div>
 </section>
 
-<section class="facts">
-  <div>
-    <h2>Research Interests</h2>
-    <ul class="plain-list">
-      <li>Orbit Determination and Spacecraft Navigation</li>
-      <li>Small-Body Gravity Field Modeling</li>
-      <li>Optical and Terrain-Relative Navigation</li>
-      <li>Bayesian Inference and Uncertainty Quantification</li>
-      <li>Machine Learning for Guidance, Navigation, and Control</li>
-    </ul>
-  </div>
-  <div>
-    <h2>Education</h2>
-    <ul class="plain-list edu">
-      <li><strong>Ph.D. in Aerospace Engineering</strong><span>University of Colorado Boulder, 2024–Present</span></li>
-      <li><strong>M.S. in Space Engineering</strong><span>Politecnico di Milano, 2023</span></li>
-      <li><strong>B.S. in Aerospace Engineering</strong><span>Politecnico di Milano, 2021</span></li>
-    </ul>
-  </div>
+<section class="stats reveal">
+  <div class="stat"><span class="stat__num">2</span><span class="stat__label">Journal Papers</span></div>
+  <div class="stat"><span class="stat__num">7</span><span class="stat__label">Conference Papers</span></div>
+  <div class="stat"><span class="stat__num">1000+</span><span class="stat__label">Commits to Scarabaeus</span></div>
+  <div class="stat"><span class="stat__num"><i class="fas fa-trophy"></i></span><span class="stat__label">Breakwell Award 2025</span></div>
 </section>
 
-<section class="section">
-  <h2>Research Areas</h2>
-  <div class="cards">
-    <a class="card" href="{{ '/research/ch' | relative_url }}">
-      <img src="{{ '/assets/img/gravity.jpg' | relative_url }}" alt="Cylindrical harmonic gravity fit near the surface of Eros" loading="lazy">
-      <div class="card__body">
-        <span class="card__label">Dynamical Model</span>
-        <h3>Cylindrical Harmonic Gravity Fields</h3>
-        <p>A Fourier–Bessel interior gravity representation that remains valid down to the surface, enabling near-surface gravity science and interior density inference.</p>
+<section class="block">
+  <header class="block__head reveal">
+    <p class="kicker">Research</p>
+    <h2>Improving Each Part of Small-Body Orbit Determination</h2>
+    <p class="block__sub">
+      His Ph.D. dissertation, <em>Orbit Determination Methods for Small-Body Gravity Characterization</em>, advised by
+      Dr. Jay W. McMahon, contributes to the three parts of orbit determination: the dynamical model, the measurement model, and the estimation framework.
+    </p>
+  </header>
+  <div class="pillars">
+    <a class="pillar reveal" href="{{ '/research/ch' | relative_url }}">
+      <div class="pillar__media"><img src="{{ '/assets/img/gravity.jpg' | relative_url }}" alt="Cylindrical harmonic gravity fit near the surface of Eros" loading="lazy"></div>
+      <div class="pillar__body">
+        <span class="tag tag--a">01 · Dynamics</span>
+        <h3>Cylindrical Harmonic Gravity</h3>
+        <p>A Fourier–Bessel interior gravity model that stays valid down to the surface. On Eros it fits the potential with errors below 0.005%, and it supports inference of interior density and local mass changes.</p>
+        <span class="pillar__more">Read More <i class="fas fa-arrow-right"></i></span>
       </div>
     </a>
-    <a class="card" href="{{ '/research/vo' | relative_url }}">
-      <img src="{{ '/assets/img/vo.jpg' | relative_url }}" alt="Feature correspondences on Dawn imagery of Vesta" loading="lazy">
-      <div class="card__body">
-        <span class="card__label">Measurement Model</span>
+    <a class="pillar reveal" href="{{ '/research/vo' | relative_url }}">
+      <div class="pillar__media"><img src="{{ '/assets/img/vo.jpg' | relative_url }}" alt="Feature tracking on Dawn imagery of Vesta" loading="lazy"></div>
+      <div class="pillar__body">
+        <span class="tag tag--b">02 · Measurements</span>
         <h3>Map-Free Visual Odometry</h3>
-        <p>Epipolar constraints processed directly within orbit determination, without landmark catalogs, and with estimation of the body's rotational state. Validated on Dawn imagery of Vesta.</p>
+        <p>Epipolar constraints are processed directly in the OD filter, so no landmark catalog is needed and the body's pole can be estimated. Validated on real Dawn imagery of Vesta.</p>
+        <span class="pillar__more">Read More <i class="fas fa-arrow-right"></i></span>
       </div>
     </a>
-    <a class="card" href="{{ '/research/mcmc' | relative_url }}">
-      <img src="{{ '/assets/img/mcmc.jpg' | relative_url }}" alt="Posterior corner plot from ensemble MCMC" loading="lazy">
-      <div class="card__body">
-        <span class="card__label">Estimation Framework</span>
-        <h3>Bayesian Orbit Determination</h3>
-        <p>Ensemble Markov Chain Monte Carlo accelerated by high-order state transition tensors, providing full non-Gaussian posteriors for small-body orbit determination.</p>
+    <a class="pillar reveal" href="{{ '/research/mcmc' | relative_url }}">
+      <div class="pillar__media"><img src="{{ '/assets/img/mcmc.jpg' | relative_url }}" alt="Posterior corner plot from ensemble MCMC" loading="lazy"></div>
+      <div class="pillar__body">
+        <span class="tag tag--c">03 · Estimation</span>
+        <h3>MCMC with State Transition Tensors</h3>
+        <p>An ensemble MCMC sampler that uses high-order flow expansions instead of repeated propagation, making full non-Gaussian posteriors tractable and exposing biased linearized solutions.</p>
+        <span class="pillar__more">Read More <i class="fas fa-arrow-right"></i></span>
       </div>
     </a>
   </div>
 </section>
 
-<section class="section">
-  <h2>News</h2>
-  <ul class="news">
-    {% for item in site.data.news limit: 7 %}
-    <li>
-      <span class="news__date">{{ item.date }}{% if item.upcoming %}<span class="badge badge--soon">Upcoming</span>{% endif %}</span>
-      <span class="news__text">{{ item.text }}</span>
-    </li>
-    {% endfor %}
-  </ul>
+<section class="block">
+  <header class="block__head reveal">
+    <p class="kicker">Missions</p>
+    <h2>Methods Tested on Real Mission Data</h2>
+  </header>
+  <div class="missions">
+    <div class="mission reveal">
+      <i class="fas fa-satellite"></i>
+      <h4>Emirates Mission to the Asteroid Belt</h4>
+      <p>Navigation support at LASP: CDR/GSCDR reviews, training exercises for the UAE team, and development of the <a href="{{ '/software/scb' | relative_url }}">Scarabaeus</a> OD software.</p>
+    </div>
+    <div class="mission reveal">
+      <i class="fas fa-meteor"></i>
+      <h4>ESA Hera · Didymos–Dimorphos</h4>
+      <p>Upcoming 2027 visit to the University of Bologna Radio Science Experiment team, working on gravity science, particle tracking, and optical navigation.</p>
+    </div>
+    <div class="mission reveal">
+      <i class="fas fa-camera"></i>
+      <h4>NASA Dawn · Vesta</h4>
+      <p>Flight imagery from the RC3 phase used to validate tightly coupled visual odometry and pole estimation.</p>
+    </div>
+    <div class="mission reveal">
+      <i class="fas fa-globe-americas"></i>
+      <h4>NEAR · OSIRIS-REx</h4>
+      <p>Test cases on Eros and Bennu for near-surface gravity models and posterior sampling in particle tracking.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section">
-  <h2>Selected Publications</h2>
-  <ol class="citations">
-    {% for p in site.data.publications %}{% if p.selected %}
-    <li>
-      {{ p.authors | replace: "G. Fereoli", "<strong>G. Fereoli</strong>" }},
-      “{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %},”
-      <em>{{ p.venue }}</em>, {% if p.date %}{{ p.date }}{% else %}{{ p.year }}{% endif %}.
-      {% if p.award %}<span class="badge badge--award">{{ p.award }}</span>{% endif %}
-    </li>
-    {% endif %}{% endfor %}
-  </ol>
-  <p><a href="{{ '/publications/' | relative_url }}">Full Publication List →</a></p>
+<section class="block block--split">
+  <div class="split__col reveal">
+    <header class="block__head">
+      <p class="kicker">News</p>
+      <h2>Recent Updates</h2>
+    </header>
+    <ol class="timeline">
+      {% for item in site.data.news limit: 8 %}
+      <li class="timeline__item{% if item.upcoming %} is-upcoming{% endif %}">
+        <span class="timeline__dot"><i class="{{ item.icon }}"></i></span>
+        <div class="timeline__body">
+          <span class="timeline__date">{{ item.date }}{% if item.upcoming %} <span class="badge badge--soon">Upcoming</span>{% endif %}</span>
+          <p>{{ item.text }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  <div class="split__col reveal">
+    <header class="block__head">
+      <p class="kicker">Selected Work</p>
+      <h2>Publications</h2>
+    </header>
+    <ul class="pub-list pub-list--compact">
+      {% for p in site.data.publications %}{% if p.selected %}
+      <li class="pub">
+        <span class="pub__year">{{ p.year }}</span>
+        <div>
+          <p class="pub__title">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+          <p class="pub__venue">{{ p.venue }}</p>
+          {% if p.award %}<span class="badge badge--award"><i class="fas fa-trophy"></i> {{ p.award }}</span>{% endif %}
+        </div>
+      </li>
+      {% endif %}{% endfor %}
+    </ul>
+    <a class="pill pill--small" href="{{ '/publications/' | relative_url }}">All Publications <i class="fas fa-arrow-right"></i></a>
+
+    <header class="block__head block__head--spaced">
+      <p class="kicker">Recognition</p>
+      <h2>Awards</h2>
+    </header>
+    <ul class="awards">
+      <li><i class="fas fa-medal"></i><div><strong>LASP Recognition Coin</strong><span>Emirates Mission to the Asteroid Belt · 2026</span></div></li>
+      <li><i class="fas fa-star"></i><div><strong>Excellent Reviewer, JGCD</strong><span>AIAA · 2026</span></div></li>
+      <li><i class="fas fa-trophy"></i><div><strong>John V. Breakwell Student Award</strong><span>AAS/AIAA Astrodynamics Specialist Conference · 2025</span></div></li>
+      <li><i class="fas fa-award"></i><div><strong>Europe–Colorado Program Scholarship</strong><span>CU Boulder College of Engineering · 2022</span></div></li>
+    </ul>
+  </div>
 </section>
 
-<section class="section">
-  <h2>Honors and Awards</h2>
-  <ul class="awards">
-    <li><span class="awards__year">2026</span><span><strong>LASP Recognition Coin</strong>, Emirates Mission to the Asteroid Belt</span></li>
-    <li><span class="awards__year">2026</span><span><strong>Excellent Reviewer</strong>, Journal of Guidance, Control, and Dynamics</span></li>
-    <li><span class="awards__year">2025</span><span><strong>John V. Breakwell Student Award</strong>, AAS/AIAA Astrodynamics Specialist Conference</span></li>
-    <li><span class="awards__year">2022</span><span><strong>Europe–Colorado Program Scholarship</strong>, University of Colorado Boulder</span></li>
-  </ul>
+<section class="cta-band reveal">
+  <h2>Get in Touch</h2>
+  <p>Giovanni welcomes conversations and collaborations on small-body navigation, gravity science, and open-source orbit determination tools.</p>
+  <a class="pill pill--primary" href="mailto:giovanni.fereoli@colorado.edu"><i class="fas fa-envelope"></i> giovanni.fereoli@colorado.edu</a>
 </section>

@@ -35,17 +35,17 @@ excerpt: "Journal articles, conference papers, workshops, and theses."
           {% when "upcoming" %}<span class="badge badge--soon">Upcoming</span>
           {% when "in-prep" %}<span class="badge badge--muted">In Preparation</span>
         {% endcase %}
-        {% if p.award %}<span class="badge badge--award">{{ p.award }}</span>{% endif %}
+        {% if p.award %}<span class="badge badge--award"><i class="fas fa-trophy"></i> {{ p.award }}</span>{% endif %}
       </div>
       <h3 class="pub-card__title">{{ p.title }}</h3>
       <p class="pub-card__authors">{{ p.authors | replace: "G. Fereoli", "<strong>G. Fereoli</strong>" }}</p>
       <p class="pub-card__venue"><em>{{ p.venue }}</em>{% if p.date %} · {{ p.date }}{% endif %}</p>
       <div class="pub-card__links">
-        {% if p.doi %}<a class="button button--small" href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
-        {% if p.pdf %}<a class="button button--small" href="{{ p.pdf }}">PDF</a>{% endif %}
-        {% if p.slides %}<a class="button button--small" href="{{ p.slides }}">Slides</a>{% endif %}
-        {% if p.code %}<a class="button button--small" href="{{ p.code }}">Code</a>{% endif %}
-        {% if p.research %}<a class="button button--small" href="{{ p.research | relative_url }}">Project</a>{% endif %}
+        {% if p.doi %}<a class="pill pill--small" href="https://doi.org/{{ p.doi }}"><i class="fas fa-link"></i> DOI</a>{% endif %}
+        {% if p.pdf %}<a class="pill pill--small" href="{{ p.pdf }}"><i class="fas fa-file-pdf"></i> PDF</a>{% endif %}
+        {% if p.slides %}<a class="pill pill--small" href="{{ p.slides }}"><i class="fas fa-desktop"></i> Slides</a>{% endif %}
+        {% if p.code %}<a class="pill pill--small" href="{{ p.code }}"><i class="fab fa-github"></i> Code</a>{% endif %}
+        {% if p.research %}<a class="pill pill--small" href="{{ p.research | relative_url }}"><i class="fas fa-arrow-right"></i> Project</a>{% endif %}
       </div>
     </li>
     {% endfor %}
