@@ -3,7 +3,7 @@ name: "Scarabaeus - Navigation Tool for Interplanetary Missions"
 title: "Scarabaeus: Navigation Tool for Interplanetary Missions"
 date: 2025-01-01 12:00:00 -0600
 collection: software
-excerpt: "Open-source orbit determination and navigation framework used for the Emirates Mission to the Asteroid Belt."
+excerpt: "Open-source orbit determination and navigation software used for the Emirates Mission to the Asteroid Belt."
 
 header:
   teaser: assets/img/scarabaeus.png
@@ -13,18 +13,18 @@ header:
 
 The software has a Python front end with C++ and Rust backends for key numerical components. It supports:
 
-- precise force modeling (polyhedral gravity, SRP, third-body, J2, etc.),
-- radiometric and optical measurement modeling (Doppler, sequential ranging, optical navigation) with analytical sensitivities,
-- estimation algorithms (Batch least squares, SRIF),
-- and tooling for trajectory design, residual analysis, and uncertainty quantification.
+- Precise force modeling (polyhedral gravity, SRP, third-body, J2)
+- Radiometric and optical measurement modeling (Doppler, sequential ranging, optical navigation) with analytical sensitivities
+- Estimation algorithms (batch least squares, SRIF)
+- Tooling for trajectory design, residual analysis, and uncertainty quantification
 
-Scarabaeus is used operationally to support the [Emirates Mission to the Asteroid Belt](https://www.mbrsc.ae/emirates-mission-to-the-asteroid-belt). As a Flight Dynamics Affiliate at LASP, I have made 1000+ commits to it: dynamics and variational equations, measurement models, estimation pipelines, V&V and unit testing, and a MongoDB-based mission database.
+Scarabaeus is used operationally to support the [Emirates Mission to the Asteroid Belt](https://www.mbrsc.ae/emirates-mission-to-the-asteroid-belt). As a Flight Dynamics Affiliate at LASP, Giovanni has contributed more than 1,000 commits: dynamics and variational equations, measurement models, estimation pipelines, V&V and unit testing, and a MongoDB-based mission database.
 
-### 📚 Documentation
+### Documentation
 
 [View the Scarabaeus Documentation](https://ccar-orcca.github.io/scarabaeus-docs/){: .btn .btn--primary .btn--large}
 
-### 📝 Related Publications
+### Related Publications
 
 - **Design and Preliminary Results of Scarabaeus: A New Open-Source Navigation Tool for Interplanetary Spacecraft Navigation**  
   Jay McMahon, Mattia Pugliatti, Dahlia Baker, Anivid Pedros-Faura, Giovanni Fereoli, Kian Shakerin, Santhosh Pattamudu-Manoharan, Zachary Ellis, Mohamed Almashjari, Mohamed Kuleib, Wendy Frank, Jacopo Villa, Jeremy Knittel  

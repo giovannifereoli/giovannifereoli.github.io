@@ -5,7 +5,7 @@ date: 2023-12-01 18:22:51 -0600
 collection: research
 tags: [thesis, reinforcement learning, guidance, cislunar]
 
-excerpt: "Meta-RL closed-loop guidance for cislunar proximity operations: an LSTM agent trained with PPO in the CR3BP. From my M.S. thesis, published in JSR."
+excerpt: "Meta-reinforcement learning for closed-loop guidance in cislunar proximity operations. M.S. thesis, published in JSR."
 header:
   teaser: assets/img/arpod.jpg
 
@@ -13,7 +13,7 @@ header:
 
 <img src="/assets/img/arpod-results.jpg" alt="Spacecraft proximity operations guided by meta-reinforcement learning" loading="lazy">
 
-**Highlights**
+### Highlights
 
 - Meta-RL closed-loop controller for cislunar proximity operations
 - Handles operational constraints and stochastic effects
@@ -23,7 +23,7 @@ In order to address the challenges of future space exploration, new lightweight 
 
 ---
 
-### 📝 Related Publications
+### Related Publications
 
 - **Meta-Reinforcement Learning for Spacecraft Proximity Operations Guidance and Control in Cislunar Space (MS Thesis)**  
   [Read the thesis](https://hanspeterschaub.info/Papers/grads/GiovanniFereoli.pdf) — *Completed*
@@ -34,4 +34,4 @@ In order to address the challenges of future space exploration, new lightweight 
 
 ---
 
-[View related software and tools](/software){: .btn .btn--primary }
+[Related Software](/software/){: .btn .btn--primary }

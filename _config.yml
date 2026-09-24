@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -107,7 +107,7 @@ analytics:
 author:
   name             : "Giovanni Fereoli"
   avatar           : assets/img/profile.jpg
-  bio              : "Ph.D. researcher in Aerospace Engineering @ CU Boulder (ORCCA Lab) · Flight Dynamics Affiliate @ LASP. Orbit determination, gravity science & optical navigation for small-body missions."
+  bio              : "Ph.D. Student, Aerospace Engineering Sciences, University of Colorado Boulder. Flight Dynamics Affiliate, LASP."
   location         : "Boulder, CO, United States"
   email            : giovanni.fereoli@colorado.edu
   links:

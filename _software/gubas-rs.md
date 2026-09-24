@@ -3,7 +3,7 @@ name: "GUBAS-RS"
 title: "GUBAS-RS"
 date: 2026-05-16 12:00:00 -0000
 collection: software
-excerpt: "Rust port of the GUBAS binary-asteroid simulator, with autodiff Jacobians and OD sensitivities."
+excerpt: "Rust port of the GUBAS binary-asteroid simulator with automatic-differentiation Jacobians and OD sensitivities."
 
 header:
   teaser: assets/img/didymos.png
@@ -13,19 +13,19 @@ header:
 
 It models the **coupled translational and rotational dynamics** of binary asteroid systems with the Hou (2016) Full Two-Body Problem (F2BP) formulation, using inertia integrals \(T_{ijk}\) and truncated mutual-gravity series expansions for potential, forces, and torques.
 
-### Core capabilities
+### Core Capabilities
 
-- **Exact Jacobians with forward-mode automatic differentiation** (dual numbers), avoiding finite-difference approximations.
-- **State Transition Matrix (STM) propagation** together with the trajectory.
-- **Augmented parameter sensitivities** with respect to inertia integrals of both bodies, with independent harmonic degree/order settings per body.
-- **Stokes conversion support**, mapping \(\partial x/\partial T_{ijk}\) to spherical harmonic coefficient sensitivities \(\partial x/\partial C_{lm}\), \(\partial x/\partial S_{lm}\).
-- **Python interface (PyO3/maturin)** so the solver can be called directly from orbit-determination workflows without subprocess overhead.
+- **Exact Jacobians via Forward-Mode Automatic Differentiation** (dual numbers), avoiding finite-difference approximations.
+- **State Transition Matrix (STM) Propagation** together with the trajectory.
+- **Augmented Parameter Sensitivities** with respect to inertia integrals of both bodies, with independent harmonic degree/order settings per body.
+- **Stokes Coefficient Conversion**, mapping \(\partial x/\partial T_{ijk}\) to spherical harmonic coefficient sensitivities \(\partial x/\partial C_{lm}\), \(\partial x/\partial S_{lm}\).
+- **Python Interface (PyO3/maturin)** so the solver can be called directly from orbit-determination workflows without subprocess overhead.
 
-### Practical use
+### Practical Use
 
 The repository includes binary and Python workflows, example scripts, and Didymos–Dimorphos-style inputs for simulation and OD-oriented sensitivity studies.
 
-### 🔗 Project Link
+### Project Link
 
 [Visit GUBAS-RS on GitHub](https://github.com/giovannifereoli/GUBAS-RS){: .btn .btn--primary .btn--large}
 
