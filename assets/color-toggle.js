@@ -1,60 +1,60 @@
 (function () {
-  const STORAGE_KEY = "color-mode";
-  const toggleButtonId = "color-mode-toggle";
+  var STORAGE_KEY = "color-mode";
 
-  const getSavedMode = () => {
-    try {
-      return localStorage.getItem(STORAGE_KEY);
-    } catch (e) {
-      return null;
-    }
+  var current = function () {
+    return document.documentElement.getAttribute("data-theme") || "dark";
   };
 
-  const saveMode = (mode) => {
-    try {
-      localStorage.setItem(STORAGE_KEY, mode);
-    } catch (e) {
-      // ignore write failures (e.g., private mode)
-    }
+  var label = function (button) {
+    var next = current() === "dark" ? "light" : "dark";
+    button.setAttribute("aria-label", "Switch to " + next + " mode");
+    button.setAttribute("title", "Switch to " + next + " mode");
   };
 
-  const updateLabel = (mode, button) => {
+  document.addEventListener("DOMContentLoaded", function () {
+    var button = document.getElementById("color-mode-toggle");
     if (!button) return;
-    const label = mode === "dark" ? "Switch to light mode" : "Switch to dark mode";
-    button.setAttribute("aria-label", label);
-    button.textContent = label;
-  };
+    label(button);
+    button.addEventListener("click", function () {
+      var next = current() === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
+      label(button);
+    });
+  });
 
-  const applyMode = (mode, button) => {
-    document.documentElement.setAttribute("data-theme", mode);
-    updateLabel(mode, button);
-  };
+  /* Publication filters */
+  document.addEventListener("DOMContentLoaded", function () {
+    var chips = document.querySelectorAll("[data-pub-filter]");
+    if (!chips.length) return;
+    var items = document.querySelectorAll("[data-pub-type]");
+    var groups = document.querySelectorAll("[data-pub-group]");
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var f = chip.getAttribute("data-pub-filter");
+        chips.forEach(function (c) { c.classList.toggle("is-active", c === chip); });
+        items.forEach(function (it) {
+          it.hidden = !(f === "all" || it.getAttribute("data-pub-type") === f);
+        });
+        groups.forEach(function (g) {
+          g.hidden = !g.querySelector("[data-pub-type]:not([hidden])");
+        });
+      });
+    });
+  });
 
-  const toggleMode = () => {
-    const current =
-      document.documentElement.getAttribute("data-theme") || "dark";
-    const next = current === "dark" ? "light" : "dark";
-    const button = document.getElementById(toggleButtonId);
-    applyMode(next, button);
-    saveMode(next);
-  };
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const button = document.getElementById(toggleButtonId);
-    if (!button) return;
-
-    const savedMode = getSavedMode();
-    if (savedMode) {
-      applyMode(savedMode, button);
-    } else if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: light)").matches
-    ) {
-      applyMode("light", button);
-    } else {
-      applyMode("dark", button);
+  /* Reveal-on-scroll */
+  document.addEventListener("DOMContentLoaded", function () {
+    var els = document.querySelectorAll(".reveal");
+    if (!("IntersectionObserver" in window)) {
+      els.forEach(function (el) { el.classList.add("is-visible"); });
+      return;
     }
-
-    button.addEventListener("click", toggleMode);
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -40px 0px" });
+    els.forEach(function (el) { io.observe(el); });
   });
 })();

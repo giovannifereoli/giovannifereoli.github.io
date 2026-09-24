@@ -1,0 +1,132 @@
+# Publications shown on /publications/ and (when selected: true) on the home page.
+# type: journal | conference | workshop | thesis
+# status: published | presented | accepted | upcoming | in-prep
+- type: journal
+  title: "Interior Gravity Characterization of Small Celestial Bodies Using Cylindrical Harmonics"
+  authors: "G. Fereoli, J. McMahon"
+  venue: "Celestial Mechanics and Dynamical Astronomy, 138, 12"
+  year: 2026
+  date: "March 2026"
+  status: published
+  doi: "10.1007/s10569-026-10281-7"
+  research: /research/ch
+  selected: true
+
+- type: journal
+  title: "Meta-Reinforcement Learning for Spacecraft Proximity Operations Guidance and Control in Cislunar Space"
+  authors: "G. Fereoli, H. Schaub, P. Di Lizia"
+  venue: "Journal of Spacecraft and Rockets"
+  year: 2024
+  date: "October 2024"
+  status: published
+  doi: "10.2514/1.A36100"
+  code: https://github.com/giovannifereoli/RL-for-Spacecraft-Proximity-Operations-GC
+  research: /research/arpod-metarl
+  selected: true
+
+- type: journal
+  title: "Bayesian Orbit Determination via Markov Chain Monte Carlo with High-Order Flow Expansions"
+  authors: "G. Fereoli, J. McMahon"
+  venue: "Acta Astronautica"
+  year: 2026
+  status: in-prep
+  code: https://github.com/giovannifereoli/MCMC-STT-OD
+  research: /research/mcmc
+
+- type: journal
+  title: "REVO: Rotation Estimation and Visual Odometry for Surface Relative Navigation"
+  authors: "J. Villa, G. Fereoli, J. McMahon"
+  venue: "Journal of Guidance, Control, and Dynamics"
+  year: 2026
+  status: in-prep
+  research: /research/vo
+
+- type: journal
+  title: "Small-Body Interior Density Inference and Localized Mass Variation Reconstruction via Cylindrical Harmonic Gravity Modeling"
+  authors: "G. Fereoli, J. McMahon"
+  venue: "Icarus"
+  year: 2026
+  status: in-prep
+  research: /research/ch
+
+- type: conference
+  title: "Interior Cylindrical Harmonics for Small-Body Gravity: Global Interior Estimation and Local Mass-Change Recovery"
+  authors: "G. Fereoli, J. McMahon"
+  venue: "37th AAS/AIAA Space Flight Mechanics Meeting, New Orleans, LA"
+  year: 2027
+  date: "January 2027"
+  status: upcoming
+  research: /research/ch
+
+- type: conference
+  title: "Efficient Posterior Sampling for Small-Body Orbit Determination"
+  authors: "G. Fereoli, J. McMahon"
+  venue: "AAS/AIAA Astrodynamics Specialist Conference, Whistler, BC, Canada"
+  year: 2026
+  date: "August 2026"
+  code: https://github.com/giovannifereoli/MCMC-STT-OD
+  research: /research/mcmc
+  selected: true
+
+- type: conference
+  title: "Operational Maneuver Targeting Framework for the Emirates Mission to the Asteroid Belt"
+  authors: "M. Kuleib, G. Fereoli, J. McMahon, J. Knittel"
+  venue: "30th International Symposium on Space Flight Dynamics (ISSFD), Toulouse, France"
+  year: 2026
+  date: "June 2026"
+
+- type: conference
+  title: "On Cylindrical Harmonics for Local Gravity Field Modeling"
+  authors: "G. Fereoli, J. McMahon"
+  venue: "AAS/AIAA Astrodynamics Specialist Conference, Boston, MA"
+  year: 2025
+  date: "August 2025"
+  status: presented
+  award: "John V. Breakwell Student Award"
+  research: /research/ch
+  selected: true
+
+- type: conference
+  title: "The Scarabaeus Open-Source Navigation Tool: Preliminary Results and Real Measurements"
+  authors: "J. McMahon, M. Pugliatti, G. Fereoli, S. Pattamudu-Manoharan, Z. Ellis, A. Cabra, M. Almashjari, M. Kuleib, W. Frank, J. Knittel"
+  venue: "AAS/AIAA Astrodynamics Specialist Conference, Boston, MA"
+  year: 2025
+  date: "August 2025"
+  status: presented
+  research: /software/scb
+
+- type: conference
+  title: "Design and Preliminary Results of Scarabaeus: A New Open-Source Navigation Tool for Interplanetary Spacecraft Navigation"
+  authors: "J. McMahon, M. Pugliatti, D. Baker, A. Pedros-Faura, G. Fereoli, K. Shakerin, S. Pattamudu-Manoharan, Z. Ellis, M. Almashjari, M. Kuleib, W. Frank, J. Villa, J. Knittel"
+  venue: "47th Rocky Mountain AAS GN&C Conference, Breckenridge, CO"
+  year: 2025
+  date: "February 2025"
+  status: presented
+  research: /software/scb
+
+- type: conference
+  title: "Meta-Reinforcement Learning for Spacecraft Proximity Operations Guidance and Control in Cislunar Space"
+  authors: "G. Fereoli, H. Schaub, P. Di Lizia"
+  venue: "46th AAS Guidance, Navigation, and Control Conference, Breckenridge, CO"
+  year: 2024
+  date: "February 2024"
+  status: presented
+  research: /research/arpod-metarl
+
+- type: workshop
+  title: "Reinforcement Learning for Proximity Operations Applications"
+  authors: "G. Fereoli"
+  venue: "8th AIAA Intelligent Systems Workshop, Boulder, CO"
+  year: 2023
+  date: "July 2023"
+  status: presented
+
+- type: thesis
+  title: "Meta-Reinforcement Learning for Spacecraft Proximity Operations Guidance and Control in Cislunar Space"
+  authors: "G. Fereoli"
+  venue: "M.S. Thesis, Politecnico di Milano (advisors: P. Di Lizia, H. Schaub)"
+  year: 2023
+  date: "December 2023"
+  status: published
+  pdf: https://hanspeterschaub.info/Papers/grads/GiovanniFereoli.pdf
+  slides: https://www.researchgate.net/publication/376681432_MSc_Defense_Presentation

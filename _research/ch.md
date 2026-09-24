@@ -1,43 +1,50 @@
 ---
 name: "gravity-modeling"
-layout: single
-title: "Cylindrical Harmonics for Local Gravity Field Modeling in TAG and Landing Scenarios"
-date: 2025-01-01 10:00:00 -0600
+title: "Cylindrical Harmonics for Near-Surface Gravity & Interior Density Inference"
+date: 2026-03-01 10:00:00 -0600
 collection: research
-tags: gravity, small bodies, cylindrical harmonics
-
+tags: [gravity, small bodies, cylindrical harmonics, density inference]
+excerpt: "A Fourier–Bessel interior gravity model that stays valid down to the surface. It supports landing and TAG, gravity science, and inference of interior density and local mass changes."
 header:
-  teaser: assets/gravity_teaser.png
+  teaser: assets/img/gravity.jpg
 ---
 
-<img src="/assets/gravity_teaser.png" alt="Gravity field fitting using cylindrical harmonics" loading="lazy">
+<img src="/assets/img/gravity.jpg" alt="Relative potential error of a cylindrical harmonic fit near the surface of Eros" loading="lazy">
 
-Accurate gravity modeling is fundamental for proximity operations around small bodies, particularly during critical phases such as touch-and-go (TAG) and landing. Conventional exterior formulations—spherical harmonics, polyhedral models, and mascons—often encounter limitations related to convergence, local fidelity, and computational cost when operating near the surface or within highly localized regions of interest.
+<p class="pillar-label"><span class="tag tag--a">Contribution 1 · Dynamical model</span></p>
 
-This work introduces an **interior cylindrical Bessel expansion** for localized gravity field representation, derived directly from Laplace’s equation in cylindrical coordinates. The resulting formulation leverages **Fourier–Bessel basis functions**, providing guaranteed convergence inside a modeled cylindrical domain and enabling targeted high-fidelity gravity reconstruction. Expansion coefficients are obtained via weighted least-squares fitting to truth-model field samples, and the solution is validated against a high-resolution polyhedral gravity model.
+**Research question.** Existing interior gravity representations have convergence and operational limits. How can a near-surface gravity model be both physically consistent and computationally efficient, and also be more sensitive to interior density variations?
 
-The approach demonstrates:
+Exterior spherical harmonics converge only outside the Brillouin sphere. Polyhedra assume constant density, are expensive to evaluate, and cannot take in OD data. Interior spherical harmonics are valid only down to a single tangent point, and interior Bessel expansions need very large parameter sets. This work solves **Laplace's equation in cylindrical coordinates**, which gives a localized **Fourier–Bessel expansion**:
 
-- Sub-percent errors in potential and acceleration within the cylindrical region, including near-surface regimes.
-- Improved local convergence relative to traditional spherical harmonic and mascon models.
-- Reduced coefficient count for comparable accuracy, yielding computational efficiency.
-- Consistent agreement in trajectory propagation and uncertainty growth through covariance analysis.
+$$
+\mathcal{U}_{\alpha}(\rho,\varphi,z)=\sum_{m=0}^{M}\sum_{n=1}^{N}
+\mathcal{J}_m\!\left(\tfrac{j_{mn}\rho}{\alpha R^*}\right)
+e^{-j_{mn}z/(\alpha R^*)}
+\left[\mathscr{A}_{mn}\cos m\varphi+\mathscr{B}_{mn}\sin m\varphi\right]
+$$
 
-This localized modeling framework enables precise gravity representation for **landing, TAG, terminal guidance, and surface-interaction trajectories**, while also supporting future extensions in **orbit determination, close-proximity autonomy, regolith dynamics, and density inference**.
+It is valid in any mass-free cylinder, whether inside, across, or beyond the Brillouin sphere. A virtual asymptotic boundary at $\rho=\alpha R^*$ keeps the basis discrete without forcing the potential to vanish on the cylinder wall.
+
+### Key results on (433) Eros
+
+- **Accuracy:** a 25×25 field has mean relative potential error of 4.2×10⁻⁴ % and maximum below 0.005 %. Existing near-surface models can have errors of order 1–10 %.
+- **Dynamics:** over a 15-hour soft-landing trajectory, position error stays under 2 cm and velocity error under 0.02 mm/s against the polyhedral truth.
+- **Uncertainty:** NEES tests against a 10,000-sample Monte Carlo confirm that linear covariance propagation with the fitted Jacobians is consistent.
+
+### Ongoing work
+
+- **Interior density inference:** least-squares inversion for discrete mascon-like anomalies relative to a constant-density baseline.
+- **Local mass-change recovery:** an analytical mapping from coefficient changes before and after an event to surface density $\Delta\sigma(\rho,\varphi)$ and total mass change $\Delta M$, for events such as TAG, plume–surface interaction, or regolith motion.
+- **Hera:** implementation in MONTE to use near-surface Juventas and GRASS gravimeter data at Dimorphos.
 
 ---
 
-### 📝 Related Publications
+### Related publications
 
-- **On Cylindrical Harmonics for Local Gravity Field Modeling**  
-  *G. Fereoli, J. McMahon*  
-  *AAS/AIAA Astrodynamics Specialist Conference*, Boston, August 2025 — **Breakwell Award Winner** — *Presented*
+- **Interior Gravity Characterization of Small Celestial Bodies Using Cylindrical Harmonics**. *G. Fereoli, J. McMahon.* *Celestial Mechanics and Dynamical Astronomy*, 138, 12 (2026). [doi:10.1007/s10569-026-10281-7](https://doi.org/10.1007/s10569-026-10281-7)
+- **On Cylindrical Harmonics for Local Gravity Field Modeling**. *G. Fereoli, J. McMahon.* AAS/AIAA Astrodynamics Specialist Conference, Boston, 2025. 🏆 **John V. Breakwell Student Award**
+- **Interior Cylindrical Harmonics for Small-Body Gravity: Global Interior Estimation and Local Mass-Change Recovery**. *G. Fereoli, J. McMahon.* 37th AAS/AIAA Space Flight Mechanics Meeting, New Orleans, Jan 2027 (upcoming).
+- **Small-Body Interior Density Inference and Localized Mass Variation Reconstruction via Cylindrical Harmonic Gravity Modeling**. *G. Fereoli, J. McMahon.* *Icarus*, in preparation.
 
-- **Interior Gravity Characterization of Small Celestial Bodies Using Cylindrical Harmonics**  
-  *G. Fereoli, J. McMahon*  
-  *Celestial Mechanics and Dynamical Astronomy*, 138, 12 (2026).  
-  https://doi.org/10.1007/s10569-026-10281-7
-
----
-
-[View related software and tools](/software){: .btn .btn--primary }
+[Code on GitHub](https://github.com/giovannifereoli/Interior-Gravity-Field-CH){: .btn .btn--primary } [All publications](/publications/){: .btn .btn--inverse }

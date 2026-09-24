@@ -1,16 +1,16 @@
 ---
 name: "aerocapture-density-adaptation"
-layout: single
 title: "Deep Learning-Based Online Density Adaptation for Aerocapture Guidance"
-date: 2026-01-01 10:00:00 -0600
+date: 2025-12-01 10:00:00 -0600
 collection: research
-tags: aerocapture, guidance, deep learning, LSTM, atmospheric density
+tags: [aerocapture, guidance, deep learning, LSTM, atmospheric density]
 
+excerpt: "An LSTM onboard density model with online adaptation for Mars aerocapture guidance. Supervised M.S. project, cutting mean apoapsis error by up to 65%."
 header:
-  teaser: assets/aerocapture.png
+  teaser: assets/img/aerocapture.jpg
 ---
 
-<img src="/assets/aerocapture.png" alt="Spacecraft performing aerocapture maneuver" loading="lazy">
+<img src="/assets/img/aerocapture.jpg" alt="Spacecraft performing aerocapture maneuver" loading="lazy">
 
 ## Abstract
 
@@ -31,7 +31,7 @@ This study demonstrates improved aerocapture guidance accuracy by better predict
 ## 📝 Related Publication
 
 - **Deep Learning-Based Online Density Adaptation for Aerocapture Guidance (Master's Thesis)**  
-  *Claudia Muñoz Martos* (Student ID: 03723390), University of Colorado Boulder  
+  *Claudia Muñoz Martos*, Technical University of Munich (visiting student at CU Boulder)  
   **Supervision:** Prof. Markus Ryll (Associate Professorship of Autonomous Aerial Systems), Prof. Jay McMahon (Associate Professor, University of Colorado Boulder)  
   **Advisors:** Giovanni Fereoli, M.Sc.; Grace E. Calkins, M.Sc.  
   *Completed*
