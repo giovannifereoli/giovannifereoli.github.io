@@ -5,7 +5,7 @@ date: 2025-12-01 10:00:00 -0600
 collection: research
 tags: [aerocapture, guidance, deep learning, LSTM, atmospheric density]
 
-excerpt: "An LSTM onboard density model with online adaptation for Mars aerocapture guidance. Supervised M.S. project, cutting mean apoapsis error by up to 65%."
+excerpt: "An online-adaptive LSTM density model for Mars aerocapture guidance, reducing mean apoapsis error by up to 65%."
 header:
   teaser: assets/img/aerocapture.jpg
 ---
@@ -28,7 +28,7 @@ This study demonstrates improved aerocapture guidance accuracy by better predict
 
 ---
 
-## 📝 Related Publication
+## Related Publication
 
 - **Deep Learning-Based Online Density Adaptation for Aerocapture Guidance (Master's Thesis)**  
   *Claudia Muñoz Martos*, Technical University of Munich (visiting student at CU Boulder)  
