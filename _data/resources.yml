@@ -8,3 +8,12 @@
       url: "https://duncaneddy.com/writing/duncans-elements-of-style/"
       description: "A practical style guide for clear, precise technical and scientific writing, written by Duncan Eddy. Recommended for anyone drafting papers, theses, or technical reports."
       post: /blog/2026/duncans-elements-of-style/
+
+- category: "Bayesian Inference and MCMC"
+  icon: "fas fa-dice"
+  items:
+    - title: "The Sampling Gallery"
+      author: "Chris Nemeth"
+      url: "https://chris-nemeth.github.io/sampling-gallery/sampler.html?algorithm=RandomWalkMH"
+      description: "An interactive gallery of Markov Chain Monte Carlo samplers by Chris Nemeth, starting with random-walk Metropolis–Hastings. A clear, visual way to see how different samplers explore a target distribution."
+      post: /blog/2026/sampling-gallery/
