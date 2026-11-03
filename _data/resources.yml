@@ -1,0 +1,10 @@
+# Curated resources shown on /resources/.
+# Each category has a title, an icon (Font Awesome), and a list of items.
+- category: "Technical Writing"
+  icon: "fas fa-pen-nib"
+  items:
+    - title: "Duncan's Elements of Style"
+      author: "Duncan Eddy"
+      url: "https://duncaneddy.com/writing/duncans-elements-of-style/"
+      description: "A practical style guide for clear, precise technical and scientific writing, written by Duncan Eddy. Recommended for anyone drafting papers, theses, or technical reports."
+      post: /blog/2026/duncans-elements-of-style/
