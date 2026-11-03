@@ -1,0 +1,28 @@
+---
+title: "Blog"
+layout: single
+permalink: /blog/
+author_profile: true
+classes: wide
+excerpt: "Notes, recommended reading, and updates on astrodynamics, navigation, and research."
+---
+<p class="lede">Notes, recommended reading, and updates on astrodynamics, spacecraft navigation, and research practice.</p>
+
+<div class="post-list">
+  {% for post in site.posts %}
+  <a class="post-card" href="{{ post.url | relative_url }}">
+    <div class="post-card__date">
+      <span class="post-card__day">{{ post.date | date: "%d" }}</span>
+      <span class="post-card__month">{{ post.date | date: "%b %Y" }}</span>
+    </div>
+    <div class="post-card__body">
+      <h3>{{ post.title }}</h3>
+      {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 200 }}</p>{% endif %}
+      {% if post.tags.size > 0 %}<div class="post-card__tags">{% for t in post.tags %}<span>{{ t | capitalize }}</span>{% endfor %}</div>{% endif %}
+    </div>
+    <span class="post-card__arrow"><i class="fas fa-arrow-right"></i></span>
+  </a>
+  {% else %}
+  <p>No posts yet.</p>
+  {% endfor %}
+</div>
