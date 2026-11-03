@@ -780,3 +780,24 @@ html[data-theme] .reveal.is-visible { opacity: 1; transform: none; }
   .post-card { padding: 1em; gap: 0.9em; }
   .post-card__arrow { display: none; }
 }
+
+/* Citation box */
+.citation-box {
+  margin: 0.9em 0 0.2em;
+  padding: 0.8em 0.95em;
+  border-radius: 10px;
+  border: 1px dashed var(--border);
+  background: color-mix(in srgb, var(--bg) 60%, transparent);
+}
+.citation-box__label { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.3em; }
+.page__content .citation-box__text { margin: 0 0 0.6em; font-size: 0.8rem !important; line-height: 1.55; color: var(--muted); word-break: break-word; }
+.citation-box__copy {
+  cursor: pointer;
+  padding: 0.3em 0.75em;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: 600 0.72rem "Inter", sans-serif;
+}
+.citation-box__copy:hover { border-color: var(--accent); color: var(--accent); }

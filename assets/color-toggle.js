@@ -57,4 +57,26 @@
     }, { rootMargin: "0px 0px -40px 0px" });
     els.forEach(function (el) { io.observe(el); });
   });
+
+  /* Copy-to-clipboard buttons for citations */
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("[data-copy]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var text = btn.getAttribute("data-copy");
+        var done = function () {
+          var old = btn.innerHTML;
+          btn.textContent = "Copied";
+          setTimeout(function () { btn.innerHTML = old; }, 1600);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done).catch(function () {});
+        } else {
+          var ta = document.createElement("textarea");
+          ta.value = text; document.body.appendChild(ta); ta.select();
+          try { document.execCommand("copy"); done(); } catch (e) {}
+          document.body.removeChild(ta);
+        }
+      });
+    });
+  });
 })();
