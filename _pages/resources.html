@@ -17,8 +17,16 @@ excerpt: "Recommended guides, tools, and references for research in astrodynamic
       <h3><a href="{{ r.url }}">{{ r.title }}</a></h3>
       <p class="res-card__author">By {{ r.author }}</p>
       <p>{{ r.description }}</p>
+      {% if r.citation %}
+      <div class="citation-box">
+        <span class="citation-box__label">Citation</span>
+        <p class="citation-box__text">{{ r.citation }}</p>
+        <button class="citation-box__copy" type="button" data-copy="{{ r.citation | escape }}"><i class="far fa-copy"></i> Copy Citation</button>
+      </div>
+      {% endif %}
       <div class="res-card__links">
-        <a class="pill pill--small pill--primary" href="{{ r.url }}"><i class="fas fa-external-link-alt"></i> Read the Original</a>
+        {% if r.download %}<a class="pill pill--small pill--primary" href="{{ r.download | relative_url }}" download><i class="fas fa-download"></i> Download PDF</a>{% endif %}
+        <a class="pill pill--small{% unless r.download %} pill--primary{% endunless %}" href="{{ r.url }}"><i class="fas fa-external-link-alt"></i> {% if r.download %}Original Source{% else %}Read the Original{% endif %}</a>
         {% if r.post %}<a class="pill pill--small" href="{{ r.post | relative_url }}"><i class="fas fa-pen"></i> Blog Post</a>{% endif %}
       </div>
     </article>

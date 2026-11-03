@@ -1,5 +1,17 @@
 # Curated resources shown on /resources/.
+# Optional fields per item: citation (shown with a copy button), download (local file path).
 # Each category has a title, an icon (Font Awesome), and a list of items.
+- category: "Spacecraft Navigation"
+  icon: "fas fa-satellite"
+  items:
+    - title: "An Overview of Deep Space Navigation"
+      author: "Dr. Shyam Bhaskaran, NASA Jet Propulsion Laboratory"
+      url: "https://dataverse.jpl.nasa.gov/file.xhtml?fileId=71296&version=2.0&toolType=PREVIEW"
+      download: /assets/resources/Bhaskaran_Overview_of_Deep_Space_Navigation_CL21-1453.pdf
+      description: "A lecture on how interplanetary spacecraft are navigated: Deep Space Network tracking, Doppler, range, and Delta-DOR measurements, optical navigation, orbit determination, B-plane targeting, and maneuver design, with Mars 2020 and Deep Impact as examples."
+      citation: "S. Bhaskaran, \"An Overview of Deep Space Navigation,\" Jet Propulsion Laboratory, California Institute of Technology, JPL Clearance CL#21-1453, 2021. JPL Open Repository, Version 2.0. https://dataverse.jpl.nasa.gov/file.xhtml?fileId=71296&version=2.0"
+      post: /blog/2026/overview-of-deep-space-navigation/
+
 - category: "Technical Writing"
   icon: "fas fa-pen-nib"
   items:
