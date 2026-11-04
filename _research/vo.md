@@ -39,6 +39,6 @@ VO and CloudNav-style measurements will be combined with Doppler and ranging for
 
 ### Related Publications
 
-- **REVO: Rotation Estimation and Visual Odometry for Surface Relative Navigation**. *J. Villa, G. Fereoli, J. McMahon.* *Journal of Guidance, Control, and Dynamics*, in preparation.
+- **Optical Orbit Determination Using Geometric Image Constraints: Application to Dawn at (4) Vesta**. *G. Fereoli, J. Villa, J. McMahon.* *Journal of Guidance, Control, and Dynamics*, in preparation.
 
 [All Publications](/publications/){: .btn .btn--inverse }

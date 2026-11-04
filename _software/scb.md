@@ -30,8 +30,8 @@ Scarabaeus is used operationally to support the [Emirates Mission to the Asteroi
   Jay McMahon, Mattia Pugliatti, Dahlia Baker, Anivid Pedros-Faura, Giovanni Fereoli, Kian Shakerin, Santhosh Pattamudu-Manoharan, Zachary Ellis, Mohamed Almashjari, Mohamed Kuleib, Wendy Frank, Jacopo Villa, Jeremy Knittel  
   *47th Rocky Mountain AAS GN&C Conference*, Breckenridge, CO, February 2025.
 
-- **Operational Maneuver Targeting Framework for the Emirates Mission to the Asteroid Belt**  
-  Mohamed Kuleib, Giovanni Fereoli, Jay McMahon, Jeremy Knittel  
+- **Scarabaeus: An Open-Source Tool for Interplanetary Spacecraft Navigation**  
+  J. McMahon, G. Fereoli, T. Wolf, Z. Ellis, B. S. Aldhanhani, M. Kuleib, W. Frank, M. Pugliatti, M. H. Almashjari, J. Knittel  
   *30th International Symposium on Space Flight Dynamics (ISSFD)*, Toulouse, France, June 2026.
 
 - **The Scarabaeus Open-Source Navigation Tool: Preliminary Results and Real Measurements**  
@@ -39,4 +39,3 @@ Scarabaeus is used operationally to support the [Emirates Mission to the Asteroi
   *2025 AAS/AIAA Astrodynamics Specialist Conference*, Boston, MA, August 2025.
 
 For questions, early access, or collaboration opportunities, feel free to reach out.
-
