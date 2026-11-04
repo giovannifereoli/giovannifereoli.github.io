@@ -34,14 +34,6 @@
   research: /research/mcmc
 
 - type: journal
-  title: "REVO: Rotation Estimation and Visual Odometry for Surface Relative Navigation"
-  authors: "J. Villa, G. Fereoli, J. McMahon"
-  venue: "Journal of Guidance, Control, and Dynamics"
-  year: 2026
-  status: in-prep
-  research: /research/vo
-
-- type: journal
   title: "Optical Orbit Determination Using Geometric Image Constraints: Application to Dawn at (4) Vesta"
   authors: "G. Fereoli, J. Villa, J. McMahon"
   venue: "Journal of Guidance, Control, and Dynamics (Technical Note)"
