@@ -259,9 +259,6 @@ GEM
     minitest (5.27.0)
     net-http (0.9.1)
       uri (>= 0.11.1)
-    nokogiri (1.19.4-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.19.4-x86_64-linux-gnu)
     nokogiri (1.19.7-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.19.7-x86_64-linux-gnu)
@@ -279,9 +276,6 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.4.2)
-    rouge (3.26.0)
-    rubyzip (2.3.2)
-    rexml (3.2.5)
     rouge (3.30.0)
     rubyzip (3.4.0)
     safe_yaml (1.0.5)
@@ -308,8 +302,6 @@ GEM
     unicode-display_width (1.8.0)
     uri (1.1.1)
     verbal_expressions (0.1.5)
-    webrick (1.8.2)
-    zeitwerk (2.6.0)
     webrick (1.9.2)
 
 PLATFORMS
