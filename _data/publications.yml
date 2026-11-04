@@ -34,9 +34,17 @@
   research: /research/mcmc
 
 - type: journal
+  title: "REVO: Rotation Estimation and Visual Odometry for Surface Relative Navigation"
+  authors: "J. Villa, G. Fereoli, J. McMahon"
+  venue: "Journal of Guidance, Control, and Dynamics"
+  year: 2026
+  status: in-prep
+  research: /research/vo
+
+- type: journal
   title: "Optical Orbit Determination Using Geometric Image Constraints: Application to Dawn at (4) Vesta"
   authors: "G. Fereoli, J. Villa, J. McMahon"
-  venue: "Journal of Guidance, Control, and Dynamics"
+  venue: "Journal of Guidance, Control, and Dynamics (Technical Note)"
   year: 2026
   status: in-prep
   research: /research/vo
@@ -44,7 +52,7 @@
 - type: journal
   title: "Small-Body Interior Density Inference and Localized Mass Variation Reconstruction via Cylindrical Harmonic Gravity Modeling"
   authors: "G. Fereoli, J. McMahon"
-  venue: "Icarus"
+  venue: "Celestial Mechanics and Dynamical Astronomy"
   year: 2026
   status: in-prep
   research: /research/ch
@@ -69,11 +77,20 @@
   selected: true
 
 - type: conference
+  title: "Operational Maneuver Targeting Framework for the Emirates Mission to the Asteroid Belt"
+  authors: "M. Kuleib, G. Fereoli, J. McMahon, J. Knittel"
+  venue: "30th International Symposium on Space Flight Dynamics (ISSFD), Toulouse, France"
+  year: 2026
+  date: "June 2026"
+  research: /software/scb
+
+- type: conference
   title: "Scarabaeus: An Open-Source Tool for Interplanetary Spacecraft Navigation"
   authors: "J. McMahon, G. Fereoli, T. Wolf, Z. Ellis, B. S. Aldhanhani, M. Kuleib, W. Frank, M. Pugliatti, M. H. Almashjari, J. Knittel"
   venue: "30th International Symposium on Space Flight Dynamics (ISSFD), Toulouse, France"
   year: 2026
   date: "June 2026"
+  research: /software/scb
 
 - type: conference
   title: "On Cylindrical Harmonics for Local Gravity Field Modeling"
@@ -130,4 +147,3 @@
   status: published
   pdf: https://hanspeterschaub.info/Papers/grads/GiovanniFereoli.pdf
   slides: https://www.researchgate.net/publication/376681432_MSc_Defense_Presentation
-
